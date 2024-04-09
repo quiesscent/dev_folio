@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#37373d;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 350px;
+    background-color: #050410;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    border-radius: 5px;
+
+  }
+
+  .sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    z-index: -1;
+  }
+  .sidebar-content {
+    position: relative; /* Ensure content is positioned relative to the sidebar */
+    z-index: 1; /* Ensure content is above the pseudo-element */
+  }
+  li,h1,p,a,ul{
+    font-family: fantasy;
+    color: aliceblue;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right; /* Align text to the right */
+  }
+  
+  .sidebar ul li {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color:#e0e0e2;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #555;
+  }
+  
+  .content {
+   
+    margin-left: 350px;
+   
+  }
+  h1{
+    font-size: 2.75em;
+  }
+ h4{
+    color: aliceblue;
+ }
+ .section-1{
+   
+   margin: 0 auto; /* Center the container horizontally */
+   padding: 20px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    border-radius: 5px;
+    background-color: #3939eb;
+    
+
+ }
+ .section-2 {
+    max-width: 100%; /* Adjust this value based on your design needs */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    background-color:#fff;
+    
+  }
+  .section-3{
+    max-width: 100%; /* Adjust this value based on your design needs */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #5151df;
+    margin-top: 44px;
+  }
+  .flights {  
+    max-width: 100%; /* Adjust this value based on your design needs */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.container-flight {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 40px;
+  padding: 20px;
+  
+
+}
+.container-hyper {
+  position: relative;
+  display: inline-block;
+}
+.image {
+  display: block;
+  width: 300px; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+}
+.hyperlink {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  color: white;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+.items {
+  padding: 10px;
+  margin: 40px;
+}
+
+  .section-4 {
+    max-width: 100%; /* Adjust this value based on your design needs */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #4d4dbe;
+  }
+  .section-content {
+    display: flex;
+  }
+  .half-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+}
+  
+     /* CSS for input fields and textareas */
+     .field {
+      flex: 0 0 calc(50% - 20px); /* Adjust as needed for spacing */
+      margin-bottom: 20px; /* Adjust as needed */
+  }
+
+  .field label {
+      display: block;
+      margin-bottom: 5px; /* Adjusting spacing */
+  }
+
+  .socials,
+  .gmail,.inner{
+    margin-left: 70px; /* Adjust spacing between elements */
+  }
+
+
+.slideshow-container{
+  width: 100%; /* Adjust to make the image larger */
+  margin-bottom: 20px;
+  margin-left: 20px; /* Move the image a little to the right */
+  height: 350px; /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  border-radius: 12px;
+}
+.button{
+ 
+  border: 1px solid #4d4d5f;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+input[type="text"],
+textarea{     
+  background-color: #4d4d5f;
+  color: #eee3e3; /* Text color */
+  border: 1px solid #ccc; /* Border color */
+  padding: 8px; /* Padding around the content */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width */
+}
+
+.social-container-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 22px;
+  margin-bottom: 15px;
+  background-color: rgb(44, 44, 44); 
+  display:flex;
+  border-radius: 15px;
+  align-items:center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  flex-direction: row;
+  margin-right: 20px;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+.contact{
+  list-style-type: none;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

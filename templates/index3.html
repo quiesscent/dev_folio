@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/software_dev/css/booking.css">
+</head>
+<body>
+  <form>
+    <h2>Hotel Booking Form</h2>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="checkin">Check-in Date:</label><br>
+    <input type="date" id="checkin" name="checkin" required><br>
+    <label for="checkout">Check-out Date:</label><br>
+    <input type="date" id="checkout" name="checkout" required><br>
+    <label for="room">Room Type:</label><br>
+    <select id="room" name="room" required>
+      <option value="standard">Standard Room</option>
+      <option value="deluxe">Deluxe Room</option>
+      <option value="suite">Suite</option>
+    </select><br>
+    <label for="adults">Number of Adults:</label><br>
+    <input type="number" id="adults" name="adults" min="1" max="2" required><br>
+    <label for="children">Number of Children:</label><br>
+    <input type="number" id="children" name="children" min="0" max="2" required><br>
+    <input type="submit" value="Book Now">
+  </form>
+</body>
+</html>

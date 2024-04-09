@@ -1,0 +1,34 @@
+
+.slideshow-container {
+   
+    max-width: 600px; /* Half of the current max-width */
+    margin-left: 150px; /* Adjust as needed to center the container horizontally */
+    overflow: hidden;
+    border-radius: 12px 12px 12px 12px;
+    margin-top: 25px;
+    margin-right: 53.33px; /* Adjusted for 2/3 of the original value */
+   
+}
+.more{
+    color: blanchedalmond;
+    margin-top: 150px;
+}
+
+.slide {
+    display: none;
+    text-align: center; /* Center the image horizontally */
+    transition: opacity 1.5s ease; /* Faster transition effect (0.5 seconds) */
+    border-radius: 12px;
+}
+
+.slide img {
+    width: 100%; /* Adjust to make the image larger */
+    margin-bottom: 20px;
+    margin-left: 20px; /* Move the image a little to the right */
+    height: 350px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+    border-radius: 12px;
+}
+
+
+

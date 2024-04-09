@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/software_dev/css/booking1.css">
+</head>
+<body>
+  <div class="container">
+    <form action="#" class="booking-form">
+      <div class="form-group">
+        <label for="start-date">Check-in Date:</label>
+        <input type="text" id="start-date" name="start-date" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="end-date">Check-out Date:</label>
+        <input type="text" id="end-date" name="end-date" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="vehicle">Type of Vehicle:</label>
+        <select id="vehicle" name="vehicle" class="form-control" required>
+          <option value="car">Car</option>
+          <option value="suv">SUV</option>
+          <option value="truck">Truck</option>
+          <option value="truck">Bus</option>
+          <option value="truck">Flight</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>
