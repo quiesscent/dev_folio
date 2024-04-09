@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" section-content="width=device-width, initial-scale=1.0">
     <title>Travellers</title>
-	<link rel="stylesheet" href="/software_dev/css/card.css">
-    <link rel="stylesheet"  href="/software_dev/css/travellers.css">
+	<link rel="stylesheet" href="{% static 'css/card.css'%}">
+    <link rel="stylesheet"  href="{% static 'css/travellers.css'%}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -36,7 +36,7 @@
              From exotic destinations to hidden gems,we curate personalized travel experiences.
               Let us transform your wanderlust into remarkable adventures .</p>
 			  <div>
-			<a href="/software_dev/Html/homepage_1.html" class="button">Learn more</a>
+			<a href="{% static 'templates/homepage_1.html'%}" class="button">Learn more</a>
 
 			  </div>
 							
@@ -52,30 +52,31 @@
   
 								<div class="card">
 								  <div class="card-details">
-									<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+									<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 								  </div>
 								  <button class="card-button" onclick="openNewPage()">More info</button>
 
 								  <script>
 								  function openNewPage() {
 									  // Change the URL to the desired page
-									  var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
-									  window.open(url, '_blank');
+									  var src = "{% static 'templates/index1.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
+									  window.open(url, );
 								  }
 								  </script>
+									 
 								  
 								</div>
 								
 								<div class="card">
 								  <div class="card-details">
-									<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+									<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 								  </div>
 								  <button class="card-button" onclick="openNewPage()">More info</button>
 
 									<script>
 function openNewPage() {
     // Change the URL to the desired page
-    var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+    var  src = "{% static 'templates/index1.html'%}";  //with the URL you want to open
     window.open(url, '_blank');
 }
 									</script>	
@@ -84,14 +85,14 @@ function openNewPage() {
 								
 									<div class="card">
 									  <div class="card-details">
-										<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+										<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 									  </div>
 									  <button class="card-button" onclick="openNewPage()">More info</button>
 
 									<script>
 function openNewPage() {
     // Change the URL to the desired page
-    var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+    var src = "{% static 'templates/index1.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
     window.open(url, '_blank');
 }
 									</script>
@@ -114,14 +115,14 @@ function openNewPage() {
   
 						<div class="card">
 						  <div class="card-details">
-							<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+							<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 						  </div>
 						  <button class="card-button" onclick="openNewPage()">More info</button>
 
 <script>
 function openNewPage() {
     // Change the URL to the desired page
-    var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+    var src = "{% static 'templates/index3.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
     window.open(url, '_blank');
 }
 </script>
@@ -130,14 +131,14 @@ function openNewPage() {
 						
 						<div class="card">
 						  <div class="card-details">
-							<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+							<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 						  </div>
 						  <button class="card-button" onclick="openNewPage()">More info</button>
 
 <script>
 function openNewPage() {
     // Change the URL to the desired page
-    var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+    var src = "{% static 'templates/index3.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
     window.open(url, '_blank');
 }
 </script>
@@ -148,14 +149,14 @@ function openNewPage() {
 							
 							<div class="card">
 							  <div class="card-details">
-								<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+								<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 							  </div>
 							  <button class="card-button" onclick="openNewPage()">More info</button>
 
 <script>
 function openNewPage() {
     // Change the URL to the desired page
-    var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+    var src = "{% static 'templates/index3.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
     window.open(url, '_blank');
 }
 </script>
@@ -180,14 +181,14 @@ function openNewPage() {
   
 								<div class="card">
 								  <div class="card-details">
-									<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+									<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 								  </div>
 								  <button class="card-button" onclick="openNewPage()">More info</button>
 
 								  <script>
 								  function openNewPage() {
 									  // Change the URL to the desired page
-									  var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+									  var  src = "{% static 'templates/index2.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
 									  window.open(url, '_blank');
 								  }
 								  </script>
@@ -196,14 +197,14 @@ function openNewPage() {
 								
 								<div class="card">
 								  <div class="card-details">
-									<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+									<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 								  </div>
 								  <button class="card-button" onclick="openNewPage()">More info</button>
 
 								  <script>
 								  function openNewPage() {
 									  // Change the URL to the desired page
-									  var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+									  var  src = "{% static 'templates/index2.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
 									  window.open(url, '_blank');
 								  }
 								  </script>
@@ -213,14 +214,14 @@ function openNewPage() {
 									
 									<div class="card">
 									  <div class="card-details">
-										<img class="card1" src="/software_dev/images/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg" alt="">
+										<img class="card1" src="{% static 'img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2) (1).jpg'%}" alt="">
 									  </div>
 									  <button class="card-button" onclick="openNewPage()">More info</button>
 
 									  <script>
 									  function openNewPage() {
 										  // Change the URL to the desired page
-										  var url = 'https://example.com'; // Replace 'https://example.com' with the URL you want to open
+										  var src = "{% static 'templates/index2.html'%}"; // Replace src = "{% static 'templates/index1.html'%}" with the URL you want to open
 										  window.open(url, '_blank');
 									  }
 									  </script>

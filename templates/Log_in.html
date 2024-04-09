@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <link rel="stylesheet" href="/software_dev/css/Log_in.css">
+    <link rel="stylesheet" href="{% static 'css/Log_in.css' % }">
 </head>
 <body>
     <div class="form-container">
@@ -13,12 +13,12 @@
           <input type="email" class="input" placeholder="Email">
           <input type="password" class="input" placeholder="Password">
           <p class="page-link">
-            <span class="page-link-label"><a class="lines" href="/software_dev/Html/forgotpw.html">Forgot passward?</a></span>
+            <span class="page-link-label"><a class="lines" href="{%static' templates/forgotpw.html'%}">Forgot passward?</a></span>
           </p>
           <button class="form-btn">Log in</button>
         </form>
         <p class="sign-up-label">
-          Don't have an account?<span class="sign-up-link"><a href="/software_dev/Html/regestration.html">Sign up </a></span>
+          Don't have an account?<span class="sign-up-link"><a href="{%static' templates/regestration.html'%}">Sign up </a></span>
         </p>
         <div class="buttons-container">
           
@@ -34,7 +34,7 @@
               <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
       c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
             </svg>
-            <span><a class="lines" href="/software_dev/Html/index.html">Log in with google</a></span>
+            <span><a class="lines" href="{%static'templates/index.html'%}">Log in with google</a></span>
           </div>
         </div>
       </div>
